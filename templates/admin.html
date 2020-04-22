@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 style="color: beige; margin-left: 40%; margin-top: 50px; margin-bottom: 50px;">Admin</h1>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col" style="color: beige;">User Name</th>
+      <th scope="col" style="color: beige;">Password</th>
+      <th scope="col" style="color: beige;">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for each in data %}
+      <tr>
+        <td style="color: beige;">{{ each.username }}</td>
+        <td style="color: beige;">{{ each.password }}</td>
+        <td style="color: beige;">{{ each.email }}</td>
+      </tr>
+      {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}

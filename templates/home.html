@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 style = "margin: 20px 50% 100px 43%; color: beige;">Home</h1>
+    <h2 style="margin-left: 35%;margin-bottom: 200px; color: beige;">Welcome to goodReads</h2>
+    <a href="{{ url_for('register') }}" class="button" style="margin-left:30%; margin-top: 100px; background-color: whitesmoke; padding: 15px 32px;text-align: center;">Register</a>
+    <a href="{{ url_for('login') }}" class="button" style="margin-left:15%; margin-top: 100px; background-color: whitesmoke; padding: 15px 32px;text-align: center;">Login</a>
+
+{% endblock %}
+
